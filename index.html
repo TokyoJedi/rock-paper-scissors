@@ -4,9 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock, Paper, Scissors</title>
-    <script src="./scripts/scripts.js"></script>
+    <script src="./scripts/scripts.js" defer></script>
+    <style>
+        body {
+            margin: 0 20%;
+            text-align: center;
+            padding: 5%;
+        }
+        #welcome {
+            margin-bottom: 30px;
+        }
+        div {
+            min-width: 100%;
+        }
+        button {
+            min-width: 120px;
+        }
+        h4 {
+            border-bottom: 1px solid;
+            margin-top: 0;
+        }
+        #player {
+            display: inline;
+            float: left;
+            padding-left: 5px;
+        }
+        #computer {
+            display: inline;
+            float: right;
+            padding-right: 5px;
+        }
+        #results {
+            min-height: 90px;
+        }
+        #playerScore, #computerScore {
+            border-top: 1px solid;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="welcome" style="border: 1px solid black; width: 33%; text-align: center;">
+        <h3>Let's play some Rock, Paper, Scissors!</h3>
+    </div>
+    <button id="rock">Rock</button>
+    <button id="paper">Paper</button>
+    <button id="scissors">Scissors</button>
+    <div id="console" style="margin-top: 5px; width: 33%; text-align: left; min-height: 30px; height: auto;"></div>
+    <div id="results" style="border: 1px solid black; width: 33%; text-align: center;">
+        <h4>Scoreboard</h4>
+        <span id="player"><b>Player</b><br><div id="playerScore">0</div></span>
+        <span id="computer"><b>Computer</b><br><div id="computerScore">0</div></span>
+    </div>
 </body>
 </html>
